@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paipper - Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <main id="contairner">
@@ -13,6 +14,51 @@
                 <h1>Login</h1>
                 <i id="mode_icon" class="fa-solid fa-moon"></i>
             </div>
+
+            <div id="social-media">
+                <a href="#">
+                    <img src="assets/imgs/facebook.png.png" alt="Facebook Logo">
+                </a>
+
+                <a href="#">
+                    <img src="assets/imgs/google.png.png" alt="Google Logo">
+                </a>
+
+                <a href="#">
+                    <img src="assets/imgs/github.png.png" alt="Github Logo">
+                </a>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="name">
+                        Nome Social
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">
+                        Senha Trans
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                    <div class="forgot_password">
+                        <a href="#">
+                            Tu esqueceu, né?! 👀
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="login-button">
+                Login
+            </button>
         </form>
     </main>
 </body>
