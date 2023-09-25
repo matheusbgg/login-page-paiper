@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paipper - Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main id="container">
+        <form class="register_form">
+            <div class="form_header">
+                <h1>Register</h1>
+            </div>
+
+            <div class="inputs_register">
+                <div class="input-box">
+                    <label for="name">
+                        Social Name
+                        <div class="input-field">
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">
+                        Neutral E-mail
+                        <div class="input-field">
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">
+                        Trans Password
+                        <div class="input-field">
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">
+                        Again...
+                        <div class="input-field">
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="age">
+                        Bad Day (birth date)
+                        <div class="input-field">
+                            <input type="date" id="bday" name="bday" required>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="input-box">
+                    <label for="age">
+                        Close Number
+                        <div class="input-field">
+                            <input type="tel" id="pnumber" name="pnumber">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="checkbox_register_agree">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Vai, marca aí que concorda com os termos que tu nem leu e que eu coloquei só  por desencargo de consciência.<a href="termos_de_uso.html" target="_blank">Termos de Uso</a>:</label>
+                </div>
+
+                <div class="checkbox_register_email">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">Quer que eu te envie emails que tu nunca vai ler, mas que talvez seja a única pessoa que te manda alguma coisa?</label>
+                </div>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
