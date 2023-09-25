@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&family=Poppins:ital,wght@0,100;0,300;1,100&display=swap');
 
-:root {
+:root{
     --color-light-50: #f8fafc;
 
     --color-dark-50: #797984;
     --color-dark-100: #312d37;
     --color-dark-900: #000;
 
-    --color-red-50: #fa0d14bd;
-    --color-red-100: #a61a1fbd;
-    --color-red-200: #711518bd;
+    --color-green-50: #3b9938d7;
+    --color-green-100: #2b6929d7;
+    --color-green-200: #284227d7;
 
-    --color-gradient: linear-gradient(90deg, var(--color-red-50), var(--color-red-100), var(--color-red-200))
-}
+    --color-gradient: linear-gradient(90deg, var(--color-green-50), var(--color-green-100), var(--color-green-200))
+} 
 
 * {
     font-family:'Poppins', sans-serif;
@@ -21,7 +21,7 @@
     box-sizing: border-box;
 }
 
-#container {
+.container {
     height: 100vh;
     width: 100%;
     background: var(--color-gradient);
@@ -30,7 +30,9 @@
     justify-content: center;
 }
 
-#login_form {
+.register_form {
+    max-width: ;width: 80%;
+    max-height: 50%;
     background-color: var(--color-light-50);
     display: flex;
     flex-direction: column;
@@ -40,27 +42,26 @@
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
     height: fit-content;
     animation: dark-to-light 0.3s ease-in-out;
-
 }
 
-#form_header {
+.form_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#form_header h1 {
+.form_header h1 {
     font-size: 40px;
     position: relative;
 }
 
-#form_header h1::before {
+.form_header h1::before {
     position: absolute;
     content: '';
-    width: 40%;
-    background-color: var(--color-red-50);
+    width: 30%;
+    background-color: var(--color-green-50);
     height: 3px;
-    bottom: 10px;
+    bottom: 9px;
     border-radius: 5px;
 }
 
@@ -69,20 +70,7 @@
     font-size: 20px;
 }
 
-#social_media {
-    display: flex;
-    justify-content: space-around;
-}
-
-#social_media img {
-    width: 35px;
-}
-
-#social_media img:hover {
-    transform: scale(1.2);
-}
-
-#inputs {
+.inputs_register {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,23 +84,18 @@
 }
 
 .input-field {
-   display: flex;
-   align-items: center;
-   gap: 15px;
-   padding: 3px;
-   cursor:text;
-   border-bottom: 1px solid var(--color-red-50);
-}
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor:text;
+    border-bottom: 1px solid var(--color-green-50);
+ }
 
-.input-field i {
-    font-size: 18px;
-    color: var(--color-dark-50);
-}
-
-.input-field input {
+ .input-field input {
     border: none;
     background-color: transparent;
-    width: 260px;
+    /* width: 260px; */
     font-size: 18px;
     padding: 0px 5px;
 }
@@ -121,19 +104,27 @@
     outline: none;
 }
 
-#forgot_password a {
-    text-decoration: none;
-    font-size: 13px;
+.checkbox_register_email {
+    font-size: 15px;
     color: var(--color-dark-50);
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-green-50)
 }
 
-#forgot_password a:hover {
-    color: var(--color-red-50);
+.checkbox_register_agree {
+    font-size: 15px;
+    color: var(--color-dark-50);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-green-50) 
 }
 
-#login_button {
+#register_button {
     border: none;
     background: var(--color-gradient);
     color: var(--color-light-50);
@@ -144,9 +135,10 @@
     cursor: pointer;
 }
 
-#login_button:hover {
+#register_button:hover {
     transform: scale(1.05);
 }
+
 
 .dark#login_form {
     color: var(--color-light-50);
@@ -178,3 +170,4 @@
         background-color: var(--color-dark-100);
     }
 }
+
